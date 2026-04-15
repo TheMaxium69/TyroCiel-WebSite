@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TyroCiel — Studio de jeu vidéo français</title>
+<meta name="description" content="TyroCiel est un studio de jeu vidéo français indépendant. Quelque chose arrive le 9 juillet 2026.">
+<meta name="keywords" content="TyroCiel, studio jeu vidéo, jeu vidéo français, indie game studio, France">
+<meta name="robots" content="index, follow">
+<meta name="author" content="TyroCiel">
+<link rel="canonical" href="https://tyrociel.fr/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tyrociel.fr/">
+<meta property="og:title" content="TyroCiel — Studio de jeu vidéo français">
+<meta property="og:description" content="Un nouveau studio de jeu vidéo français. Le 9 juillet 2026, quelque chose commence.">
+<meta property="og:locale" content="fr_FR">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TyroCiel — Studio de jeu vidéo français">
+<meta name="twitter:description" content="Un nouveau studio de jeu vidéo français. Le 9 juillet 2026, quelque chose commence.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TyroCiel",
+  "url": "https://tyrociel.fr",
+  "description": "Studio de jeu vidéo indépendant français",
+  "foundingLocation": { "@type": "Place", "addressCountry": "FR" }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0a0a0a;
+  --fg: #efefef;
+  --muted: #909090;
+  --dim: #555555;
+}
+
+html, body {
+  width: 100%; height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Syncopate', sans-serif;
+  overflow: hidden;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: clamp(32px, 7vw, 88px);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--fg);
+  line-height: 1;
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: up 0.9s cubic-bezier(0.16,1,0.3,1) 0.1s forwards;
+}
+
+.sub {
+  font-size: clamp(8px, 1vw, 11px);
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 72px;
+  opacity: 0;
+  animation: up 0.9s cubic-bezier(0.16,1,0.3,1) 0.25s forwards;
+}
+
+.rule {
+  width: 1px;
+  height: 40px;
+  background: var(--dim);
+  margin-bottom: 72px;
+  opacity: 0;
+  animation: up 0.9s ease 0.35s forwards;
+}
+
+#countdown {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(20px, 4vw, 64px);
+  margin-bottom: 52px;
+  opacity: 0;
+  animation: up 0.9s cubic-bezier(0.16,1,0.3,1) 0.45s forwards;
+}
+
+.cd-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.cd-num {
+  font-size: clamp(28px, 5vw, 60px);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--fg);
+  line-height: 1;
+  min-width: 2ch;
+  text-align: center;
+  transition: opacity 0.1s;
+}
+
+.cd-num.tick { opacity: 0.3; }
+
+.cd-label {
+  font-size: clamp(7px, 0.8vw, 9px);
+  font-weight: 400;
+  letter-spacing: 0.35em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.cd-sep {
+  font-size: clamp(20px, 3.5vw, 48px);
+  color: var(--dim);
+  line-height: 1;
+  padding-top: 1px;
+  user-select: none;
+}
+
+.date-hint {
+  font-size: clamp(7px, 0.85vw, 9px);
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  color: var(--muted);
+  text-transform: uppercase;
+  opacity: 0;
+  animation: up 0.9s ease 0.6s forwards;
+}
+
+#corner-bl {
+  position: fixed;
+  bottom: 28px; left: 32px;
+  font-size: 8px;
+  letter-spacing: 0.3em;
+  color: var(--dim);
+  text-transform: uppercase;
+  opacity: 0;
+  animation: up 0.9s ease 0.8s forwards;
+}
+
+#corner-br {
+  position: fixed;
+  bottom: 28px; right: 32px;
+  font-size: 8px;
+  letter-spacing: 0.3em;
+  color: var(--dim);
+  text-transform: uppercase;
+  opacity: 0;
+  animation: up 0.9s ease 0.8s forwards;
+}
+
+@keyframes up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<main>
+  <h1>TyroCiel</h1>
+  <p class="sub">Studio de jeu vidéo — France</p>
+  <div class="rule"></div>
+
+  <div id="countdown" aria-label="Compte à rebours jusqu'au 9 juillet 2026">
+    <div class="cd-unit">
+      <span class="cd-num" id="cd-j">--</span>
+      <span class="cd-label">Jours</span>
+    </div>
+    <span class="cd-sep">:</span>
+    <div class="cd-unit">
+      <span class="cd-num" id="cd-h">--</span>
+      <span class="cd-label">Heures</span>
+    </div>
+    <span class="cd-sep">:</span>
+    <div class="cd-unit">
+      <span class="cd-num" id="cd-m">--</span>
+      <span class="cd-label">Minutes</span>
+    </div>
+    <span class="cd-sep">:</span>
+    <div class="cd-unit">
+      <span class="cd-num" id="cd-s">--</span>
+      <span class="cd-label">Secondes</span>
+    </div>
+  </div>
+
+  <p class="date-hint">09 · 07 · 2026</p>
+</main>
+
+<div id="corner-bl">tyrociel.fr</div>
+<div id="corner-br">© 2026</div>
+
+<p style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">
+  TyroCiel est un studio de jeu vidéo indépendant français. Le studio annoncera sa première production le 9 juillet 2026.
+</p>
+
+<script>
+const target = new Date('2026-07-09T00:00:00+02:00').getTime();
+const els = { j: document.getElementById('cd-j'), h: document.getElementById('cd-h'), m: document.getElementById('cd-m'), s: document.getElementById('cd-s') };
+function pad(n) { return String(Math.max(0, Math.floor(n))).padStart(2, '0'); }
+function tick() {
+  const diff = target - Date.now();
+  if (diff <= 0) { els.j.textContent = els.h.textContent = els.m.textContent = els.s.textContent = '00'; return; }
+  const newS = pad((diff % 60000) / 1000);
+  if (els.s.textContent !== newS) {
+    els.s.classList.add('tick');
+    setTimeout(() => els.s.classList.remove('tick'), 120);
+    els.s.textContent = newS;
+  }
+  els.j.textContent = pad(diff / 86400000);
+  els.h.textContent = pad((diff % 86400000) / 3600000);
+  els.m.textContent = pad((diff % 3600000) / 60000);
+}
+tick();
+setInterval(tick, 1000);
+</script>
+</body>
+</html>
