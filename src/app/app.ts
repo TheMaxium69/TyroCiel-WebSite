@@ -52,10 +52,8 @@ export class App {
   );
 
   public socials: ITyroUiNavbarPages[] = [
-    { label: 'discord', link: 'https://discord.com/invite/km8h5jHezt', icon: 'ri-discord-fill' },
-    { label: 'youtube', link: 'https://www.youtube.com/@tyrolium',     icon: 'ri-youtube-fill' },
-    { label: 'twitter', link: 'https://x.com/TyroliumE',               icon: 'ri-twitter-x-fill' },
-    { label: 'github',  link: 'https://github.com/tyrolium',           icon: 'ri-github-fill' },
+    { label: 'instagram', link: 'https://www.instagram.com/tyroliumstudio/', icon: 'ri-instagram-line' },
+    { label: 'linkedin',  link: 'https://www.linkedin.com/company/tyrostudio',      icon: 'ri-linkedin-fill' },
   ];
 
   /*
