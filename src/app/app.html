@@ -12,7 +12,7 @@
   </div>
 
   <div class="tc-header__content">
-    <img class="tc-header__logo" src="assets/TyroCiel.png" alt="TyroCiel">
+    <img class="tc-header__logo" src="assets/tyrolium-ui/projects/TyroCiel.png" alt="TyroCiel">
     <h1 class="tc-header__title">TyroCiel</h1>
     <p class="tc-header__subtitle">
       {{ lang() === 'en' ? 'Video game studio · Tyrolium' : 'Studio de jeu-vidéo · Tyrolium' }}
@@ -181,7 +181,7 @@
           }
         </p>
         <a href="https://tyrolium.fr" target="_blank" class="tc-tyrolium__link">
-          <img src="assets/Tyrolium.png" alt="Tyrolium" class="tc-tyrolium__logo">
+          <img src="assets/tyrolium-ui/projects/Tyrolium.png" alt="Tyrolium" class="tc-tyrolium__logo">
           <span>{{ lang() === 'en' ? 'Discover Tyrolium' : 'Découvrir Tyrolium' }}</span>
           <i class="ri-external-link-line"></i>
         </a>
@@ -235,6 +235,7 @@
   [btnLink]="'https://discord.com/invite/km8h5jHezt'"
   [subbtn]="lang() === 'en' ? 'Discover Tyrolium' : 'Découvrir Tyrolium'"
   [subLink]="'https://tyrolium.fr'"
+  [notBack]="true"
 ></tyro-ui-cta>
 
 <tyro-ui-footer

@@ -19,7 +19,7 @@ export class App {
   * */
 
   public PROJECT_NAME = 'TyroCiel';
-  public PROJECT_LOGO = 'assets/TyroCiel.png';
+  public PROJECT_LOGO = 'assets/tyrolium-ui/projects/TyroCiel.png';
 
   public PROJECT_CONTENT = computed(() =>
     this.langService.lang() === 'en'
@@ -75,7 +75,7 @@ export class App {
       descriptionEn: 'Dive into a vibrant fantasy world. Rhodotales is a narrative RPG where every choice shapes your hero\'s destiny in a rich and living universe.',
       status: 'En développement',
       statusEn: 'In development',
-      logo: 'assets/TyroCiel.png',
+      logo: 'assets/games/Rhodotales.png',
       tags: ['RPG', 'Aventure', 'Solo'],
       tagsEn: ['RPG', 'Adventure', 'Solo'],
     },
@@ -87,7 +87,7 @@ export class App {
       descriptionEn: 'The TyroServ universe comes alive in a multiplayer sandbox game, inspired by our years of experience creating and managing Minecraft servers.',
       status: 'Concept',
       statusEn: 'Concept',
-      logo: 'assets/TyroServ.png',
+      logo: 'assets/tyrolium-ui/projects/TyroServ.png',
       tags: ['Multijoueur', 'Sandbox', 'Survie'],
       tagsEn: ['Multiplayer', 'Sandbox', 'Survival'],
     },
@@ -99,32 +99,40 @@ export class App {
       lastName: 'Tournier',
       role: 'Directeur du Studio',
       roleEn: 'Studio Director',
-      photo: 'assets/Maxime_Tournier.jpg',
-      favGames: ['Super Mario Galaxy', 'The Legend of Zelda: Ocarina of time', 'Minecraft', 'Cyberpunk 2077'],
+      photo: 'assets/peoples/Maxime_Tournier.jpg',
+      favGames: ['Super Mario', 'The Legend of Zelda', 'Minecraft', 'Cyberpunk 2077'],
     },
     {
       firstName: 'Mathys',
       lastName: 'Lacoque',
       role: 'Producteur',
-      roleEn: 'Product',
-      photo: 'assets/Maxime_Tournier.jpg',
-      favGames: ['Xenoblade Chronicles', 'Final Fantasy', 'Monster Hunter'],
+      roleEn: 'Producer',
+      photo: 'assets/peoples/Mathys_Lacoque.jpg',
+      favGames: ['Xenoblade Chronicles X', 'Final Fantasy', 'Monster Hunter'],
     },
     {
-      firstName: 'Mathys',
-      lastName: 'Lacoque',
-      role: 'Producteur',
-      roleEn: 'Product',
-      photo: 'assets/Maxime_Tournier.jpg',
-      favGames: ['Xenoblade Chronicles', 'Final Fantasy', 'Monster Hunter'],
+      firstName: 'Arnaud',
+      lastName: 'Monel',
+      role: 'Développeur',
+      roleEn: 'Developer',
+      photo: 'assets/peoples/Arnaud_Monel.jpg',
+      favGames: [''],
     },
     {
-      firstName: 'Mathys',
-      lastName: 'Lacoque',
-      role: 'Producteur',
-      roleEn: 'Product',
-      photo: 'assets/Maxime_Tournier.jpg',
-      favGames: ['Xenoblade Chronicles', 'Final Fantasy', 'Monster Hunter'],
+      firstName: 'Noa',
+      lastName: 'Guilhot',
+      role: 'Développeur',
+      roleEn: 'Developer',
+      photo: 'assets/peoples/Noa_Guilhot.jpg',
+      favGames: [''],
+    },
+    {
+      firstName: 'Esteban',
+      lastName: 'Mignotte',
+      role: 'Administrateur réseaux',
+      roleEn: 'Network Administrator',
+      photo: 'assets/peoples/Esteban_Mignotte.jpg',
+      favGames: [''],
     },
   ];
 
