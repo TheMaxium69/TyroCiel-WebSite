@@ -114,7 +114,7 @@ export class App {
       role: 'Développeur',
       roleEn: 'Developer',
       photo: 'assets/peoples/Arnaud_Monel.jpg',
-      favGames: [''],
+      favGames: ['Monster Hunter', 'Titanfall'],
     },
     {
       firstName: 'Noa',
@@ -122,7 +122,7 @@ export class App {
       role: 'Développeur',
       roleEn: 'Developer',
       photo: 'assets/peoples/Noa_Guilhot.jpg',
-      favGames: [''],
+      favGames: ['Persona','Monster Hunter', 'Pragmata','Enshrouded'],
     },
     {
       firstName: 'Esteban',
@@ -130,7 +130,7 @@ export class App {
       role: 'Administrateur réseaux',
       roleEn: 'Network Administrator',
       photo: 'assets/peoples/Esteban_Mignotte.jpg',
-      favGames: [''],
+      favGames: ['Plant vs Zombie Garden Warfare', 'Age of Empire', 'Fallout'],
     },
   ];
 
