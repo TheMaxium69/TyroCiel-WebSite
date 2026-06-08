@@ -782,10 +782,28 @@
   }
 
   .tc-game-card__header {
-    gap: 0.75rem;
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    grid-template-areas:
+      "logo meta"
+      "logo badge";
+    gap: 0.4rem 0.75rem;
+  }
+
+  .tc-game-card__logo {
+    grid-area: logo;
+    align-self: center;
+  }
+
+  .tc-game-card__meta {
+    grid-area: meta;
+    align-self: center;
   }
 
   .tc-status-badge {
+    grid-area: badge;
     margin-left: 0;
+    align-self: start;
+    width: fit-content;
   }
 }
