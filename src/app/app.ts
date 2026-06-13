@@ -19,7 +19,7 @@ export class App {
   public PROJECT_CONTENT = computed(() =>
     this.langService.lang() === 'en'
       ? `<strong>TyroCiel</strong> is the <strong>video game studio</strong> of Tyrolium. We craft immersive, original gaming experiences with passion and total creative freedom.`
-      : `<strong>TyroCiel</strong> est le <strong>studio de jeu-vidéo</strong> de Tyrolium. Nous créons des expériences gaming immersives et originales avec passion et liberté créative totale.`
+      : `<strong>TyroCiel</strong> est un <strong>studio de jeu-vidéo</strong> Français. Nous créons des expériences gaming immersives et originales avec passion et liberté créative totale. <em>Une filiale de Tyrolium.</em>`
   );
 
   public pages = computed<ITyroUiNavbarPages[]>(() =>
