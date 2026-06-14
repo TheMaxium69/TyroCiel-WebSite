@@ -45,7 +45,7 @@
     <div class="tc-about__grid">
       <div class="tc-about__text">
         @if (lang() === 'en') {
-          <p>TyroCiel is the video game studio born from Tyrolium's passion for gaming. Founded in 2026, we create unique gaming experiences that blend storytelling, innovation and technical excellence.</p>
+          <p>TyroCiel is the video game studio born from Tyrolium's passion for gaming. Founded in 2020, we create unique gaming experiences that blend storytelling, innovation and technical excellence.</p>
           <p>Our dedicated team brings together developers, designers and artists united by a single ambition: crafting games that leave a lasting mark on players and push the boundaries of indie creation.</p>
         } @else {
           <p>TyroCiel est le studio de jeu-vidéo né de la passion de Tyrolium pour le gaming. Fondé en 2020, nous créons des expériences de jeu uniques qui allient narration, innovation et excellence technique.</p>
@@ -120,11 +120,11 @@
 
 <section id="team" class="tc-section tc-team">
   <div class="tc-container">
-    <p class="tc-label">{{ lang() === 'en' ? 'The people' : "L'équipe" }}</p>
+    <p class="tc-label">{{ lang() === 'en' ? 'The team' : "L'équipe" }}</p>
     <h2 class="tc-title">{{ lang() === 'en' ? 'The Studio' : 'Le Studio' }}</h2>
     <p class="tc-intro">
       @if (lang() === 'en') {
-        Passionate people building the games of tomorrow, one commit at a time.
+        Passionate people building the games of tomorrow.
       } @else {
         Des passionnés qui construisent les jeux de demain.
       }
@@ -227,7 +227,7 @@
 <tyro-ui-cta
   [title]="lang() === 'en' ? 'Play our games,<br>now.' : 'Jouez à nos jeux,<br>maintenant.'"
   [label]="lang() === 'en' ? 'Ready to play?' : 'Prêt à jouer ?'"
-  [content]="lang() === 'en' ? 'Our games are currently in development. Follow us on Discord and be the first to play when we launch.' : 'Nos jeux sont actuellement en développement. Rejoignez notre Discord et soyez les premiers à jouer lors du lancement.'"
+  [content]="lang() === 'en' ? 'Our games are currently in development. Join our Discord and be the first to play when we launch.' : 'Nos jeux sont actuellement en développement. Rejoignez notre Discord et soyez les premiers à jouer lors du lancement.'"
   [btn]="lang() === 'en' ? 'Join our Discord' : 'Rejoindre notre Discord'"
   [btnIcon]="'<i class=\'ri-discord-fill\'></i>'"
   [btnLink]="'https://discord.com/invite/km8h5jHezt'"
