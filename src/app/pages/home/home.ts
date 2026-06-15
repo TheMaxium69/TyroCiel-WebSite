@@ -29,7 +29,7 @@ export class Home {
       name: 'TyroServ Game',
       genre: 'Aventure / Open World',
       genreEn: 'Adventure / Open World',
-      description: 'Adapté de l\'univers de notre serveur Minecraft TyroServ, ce jeu d\'aventure solo en monde ouvert plonge dans un vaste univers fantasy. Il reprend et réinvente la mécanique de fusion de minerai du serveur : combinez des minerais pour forger de nouvelles capacités et de nouveaux pouvoirs.',
+      description: 'Adapté de l\'univers de notre serveur Minecraft TyroServ, ce jeu d\'aventure solo en monde ouvert plonge dans un vaste univers fantastique. Il reprend et réinvente la mécanique de fusion de minerai du serveur : combinez des minerais pour forger de nouvelles capacités et de nouveaux pouvoirs.',
       descriptionEn: 'Adapted from the universe of our Minecraft server TyroServ, this solo open world adventure game dives into a vast fantasy universe. It reimagines the server\'s ore fusion mechanic: combine minerals to forge new abilities and new powers.',
       status: 'Concept',
       statusEn: 'Concept',
