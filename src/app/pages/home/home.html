@@ -95,7 +95,7 @@
       @for (game of games; track game.name) {
         <div class="tc-game-card">
           <div class="tc-game-card__header">
-            <img class="tc-game-card__logo" [src]="game.logo" [alt]="game.name">
+            <img loading="lazy" decoding="async" class="tc-game-card__logo" [src]="game.logo" [alt]="game.name">
             <div class="tc-game-card__meta">
               <h3 class="tc-game-card__name">{{ game.name }}</h3>
               <p class="tc-game-card__genre">{{ lang() === 'en' ? game.genreEn : game.genre }}</p>
@@ -179,7 +179,7 @@
           }
         </p>
         <a href="https://tyrolium.fr" target="_blank" rel="noopener noreferrer" class="tc-tyrolium__link">
-          <img src="assets/tyrolium-ui/projects/Tyrolium.png" alt="Tyrolium" class="tc-tyrolium__logo">
+          <img loading="lazy" decoding="async" src="assets/tyrolium-ui/projects/Tyrolium.png" alt="Tyrolium" class="tc-tyrolium__logo">
           <span>{{ lang() === 'en' ? 'Discover Tyrolium' : 'Découvrir Tyrolium' }}</span>
           <i class="ri-external-link-line"></i>
         </a>
