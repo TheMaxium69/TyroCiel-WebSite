@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "TyroCiel",
+  "short_name": "TyroCiel",
+  "description": "TyroCiel est un studio de jeu-vidéo français. Nous créons des expériences gaming immersives et originales avec passion et liberté créative totale. Une filiale de Tyrolium.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#111827",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
